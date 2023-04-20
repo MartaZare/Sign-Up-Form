@@ -4,6 +4,8 @@
 
 In this project I practiced creating forms using **HTML and CSS**.
 
+![Project screenshot](screenshot.png)
+
 This project has only desktop version.
 
 Background image made by [Eberhard Grossgasteiger](https://www.pexels.com/photo/aerial-photography-of-a-mountain-640809/)
