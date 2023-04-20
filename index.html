@@ -4,49 +4,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koulen&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Sign-Up-Form</title>
   </head>
   <body>
     <header></header>
     <main>
-      <h1>Sign up <em>now</em>!</h1>
-      <h2>And get started on this <em>epic </em>journey!</h2>
+      <div class="container">
+        <h1>Sign up now!</h1>
+        <h2>And get started on this <em>epic </em>journey!</h2>
 
-      <form action="">
-        <div class="group">
-          <label for="name">NAME</label><input type="text" name="name" id="" />
-        </div>
-        <div class="group">
-          <label for="surname">SURNAME</label
-          ><input type="text" name="surname" id="" />
-        </div>
-        <div class="group">
-          <label for="email">EMAIL</label
-          ><input type="email" name="email" id="" />
-        </div>
-        <div class="group">
-          <label for="phone">PHONE NUMBER</label
-          ><input type="tel" name="phone" id="" />
-        </div>
-        <div class="group">
-          <label for="password">PASSWORD</label
-          ><input type="password" name="password" id="" />
-        </div>
-        <div class="group">
-          <label for="password">CONFIRM PASSWORD</label
-          ><input type="password" name="password" id="" />
-        </div>
-      </form>
-      <div class="submitForm">
-        <button type="submit">Create Account</button>
-        <p>Already have an account? <a href="#">Log in</a></p>
-      </div>
-      <footer>
-        <p class="copyright">
-          Copyright © 2023 MartaZare <img src="github.png" />
+        <form action="">
+          <div class="group">
+            <input type="text" name="name" id="" placeholder="Name" required />
+          </div>
+          <div class="group">
+            <input
+              type="text"
+              name="surname"
+              id=""
+              placeholder="Surname"
+              required
+            />
+          </div>
+          <div class="group">
+            <input
+              type="email"
+              name="email"
+              id=""
+              placeholder="mymail@email.com"
+              required
+            />
+          </div>
+          <div class="group">
+            <input
+              type="tel"
+              name="phone"
+              id=""
+              placeholder="370 XXX XXXXX"
+              pattern="370[0-9]{5}[0-9]{3}"
+            />
+          </div>
+          <div class="group"></div>
+          <div class="group">
+            <input
+              type="password"
+              name="password"
+              id=""
+              pattern="(?=.*\d)(?=.*[\W_]).{8,}"
+              placeholder="Password*"
+              required
+            />
+          </div>
+        </form>
+        <p class="password-msg">
+          *Password must contain 8 characters at least one special character and
+          one number.
         </p>
-      </footer>
+        <div class="submitForm">
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </div>
     </main>
+    <footer>
+      <p class="copyright">
+        Copyright © 2023 MartaZare
+        <a
+          onClick="window.open('https://github.com/MartaZare?tab=repositories', '_blank')"
+          ><img src="github.png"
+        /></a>
+      </p>
+    </footer>
   </body>
 </html>

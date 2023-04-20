@@ -5,4 +5,125 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+input {
+  border: none;
+  background: #e5ab6d;
+  border-radius: 5px;
+}
+
+input:valid {
+  outline: 2px solid #9ce41f;
+}
+
+body {
+  background-image: url(background.jpeg);
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 60%;
+  width: 35%;
+  opacity: 0.7;
+  border-radius: 40px;
+  color: white;
+}
+.container h1 {
+  font-family: "Koulen", cursive;
+  font-size: 65px;
+  color: #e4841f;
+  line-height: 70px;
+}
+
+.container h2 {
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: fixed;
+  bottom: 10px;
+  right: 40%;
+  color: white;
+}
+
+img {
+  width: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.group {
+  width: 50%;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+}
+
+.password-msg {
+  margin: 8px;
+  font-size: 14px;
+  width: 70%;
+  text-align: center;
+  color: rgb(161, 160, 160);
+}
+
+.submitForm a {
+  color: #e5ab6d;
+}
+
+.submitForm p {
+  margin-top: 8px;
+}
+
+.submitForm {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  justify-self: center;
+  background-color: #14a519;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3px;
 }
