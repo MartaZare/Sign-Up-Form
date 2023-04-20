@@ -8,19 +8,12 @@
   font-family: "IBM Plex Sans", sans-serif;
 }
 
-input {
-  border: none;
-  background: #e5ab6d;
-  border-radius: 5px;
-}
-
-input:valid {
-  outline: 2px solid #9ce41f;
-}
-
 body {
+  width: 100%;
+  height: 100%;
   background-image: url(background.jpeg);
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,8 +34,8 @@ main {
   justify-content: center;
   align-items: center;
   background-color: black;
-  height: 60%;
-  width: 35%;
+  height: 580px;
+  width: 550px;
   opacity: 0.7;
   border-radius: 40px;
   color: white;
@@ -57,6 +50,67 @@ main {
 .container h2 {
   margin-bottom: 30px;
   font-weight: 300;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.group {
+  width: 50%;
+}
+
+input {
+  background: #e5ab6d;
+  border: solid 2px #e5ab6d;
+  border-radius: 5px;
+  width: 100%;
+  padding: 8px;
+}
+
+.password-msg {
+  margin: 8px;
+  font-size: 14px;
+  width: 70%;
+  text-align: center;
+  color: rgb(161, 160, 160);
+}
+
+button {
+  justify-self: center;
+  background-color: #14a519;
+  border: solid 2px #14a519;
+  border-radius: 40px;
+  color: white;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+button:hover {
+  background-color: #c3e1c4;
+  color: #14a519;
+  font-weight: 800;
+}
+
+.submitForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+.submitForm a {
+  color: #e5ab6d;
+  font-weight: 700;
 }
 
 .copyright {
@@ -74,56 +128,8 @@ img {
   width: 40px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 10px;
-}
-
-.group {
-  width: 50%;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-}
-
-.password-msg {
-  margin: 8px;
-  font-size: 14px;
-  width: 70%;
-  text-align: center;
-  color: rgb(161, 160, 160);
-}
-
-.submitForm a {
-  color: #e5ab6d;
-}
-
-.submitForm p {
-  margin-top: 8px;
-}
-
-.submitForm {
-  display: flex;
-  flex-direction: column;
-}
-
-button {
-  justify-self: center;
-  background-color: #14a519;
-  border: none;
-  border-radius: 40px;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 3px;
+@media (max-width: 650px) {
+  .container {
+    max-width: 450px;
+  }
 }
